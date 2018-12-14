@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:scaleType="fitStart">
+
+        <TextView
+            android:id="@+id/txt_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tool_navigation"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_navigation"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_gravity="start"
+            android:contentDescription="@string/img_navigation"
+            android:src="@drawable/ic_back" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        app:tabBackground="@color/colorWhite"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/colorBlueGreen"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorDark"
+        app:tabTextColor="@color/colorGrey" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</LinearLayout>
